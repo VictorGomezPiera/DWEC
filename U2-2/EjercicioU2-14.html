@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio Unidad2 JavaScript</title>
+
+  </head>
+  <body>
+    <script type="text/javascript">
+
+function calculaEdad(edad){
+
+  var edad = prompt("Introduzca el año de nacimiento:");
+  var d = new Date();
+  var fecha = d.getFullYear();
+  var edadInt = fecha-edad;
+
+  if (edadInt>18 && edadInt<50){
+    alert("Eres mayor de edad y tienes: "+ edadInt + " años");
+  }
+  else if(edadInt<18){
+    alert("Eres joven y tienes: "+ edadInt + " años");
+  }
+  else{
+    alert("Usted esta un poco mayor y tienes: "+ edadInt + " años");
+  }
+
+return edadInt;
+}
+
+document.write(calculaEdad());
+  </script>
+
+  </body>
+</html>
