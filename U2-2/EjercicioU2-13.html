@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio Unidad2 JavaScript</title>
+
+  </head>
+  <body>
+    <script type="text/javascript">
+
+function calculaEdad(edad){
+
+  var edad = prompt("Introduzca el año de nacimiento:");
+  var d = new Date();
+  var fecha = d.getFullYear();
+  var edadInt = fecha-edad;
+
+return edadInt;
+}
+
+document.write("Usted tiene: "+ calculaEdad()+" años");
+  </script>
+
+  </body>
+</html>
