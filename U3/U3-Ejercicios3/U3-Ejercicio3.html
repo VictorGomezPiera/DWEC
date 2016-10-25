@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <title>Cronometro javascript</title>
+
+	<script>
+
+var crono = new Object();
+crono.timer=0;
+var ventana;
+
+		crono.empezarDetener = function (elemento) {
+		if(crono.timer==0){
+			// empezar el cronometro
+			elemento.value="Detener";
+			// Obtenemos el valor actual
+			crono.inicio=new Date().getTime();
+			ventana = window.open("","","width=500,height=300");
+			// iniciamos el proceso
+			crono.funcionando();
+		}else{
+			// detemer el cronometro
+			elemento.value="Empezar";
+			clearTimeout(crono.timer);
+			crono.timer=0;
+		}
+	}
+
+		crono.funcionando = function () {
+		// obteneos la fecha actual
+		crono.actual = new Date().getTime();
+		// obtenemos la diferencia entre la fecha actual y la de inicio
+		crono.diff=new Date(crono.actual-crono.inicio);
+		// mostramos la diferencia entre la fecha actual y la inicial
+		crono.result=	crono.cero(crono.diff.getUTCHours())+":"+	crono.cero(crono.diff.getUTCMinutes())+":"+crono.cero(crono.diff.getUTCSeconds());
+	//	document.getElementById('crono').innerHTML = result;
+		ventana.document.body.innerHTML = crono.result;
+		// Indicamos que se ejecute esta función nuevamente dentro de 1 segundo
+		crono.timer=setTimeout(crono.funcionando,1000);
+	}
+
+	/* Funcion que pone un 0 delante de un valor si es necesario */
+		crono.cero = function (Time) {
+		return (Time < 10) ? "0" + Time : + Time;
+	}
+
+	</script>
+</head>
+<body>
+
+<h1>Cronometro</h1>
+
+<div class="crono_wrapper">
+	<h2 id='crono'>00:00:00</h2>
+	<input type="button" value="Empezar" onclick="crono.empezarDetener(this);">
+</div>
+
+</body>
+</html>

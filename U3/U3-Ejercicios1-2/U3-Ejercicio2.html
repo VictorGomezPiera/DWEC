@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Unidad3</title>
+    <script type="text/javascript">
+
+
+    var abecedario=new Array('a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z');
+    var letraAleatoria = Math.floor(Math.random() *26 + 1);
+    var contador = 0;
+
+    function letra(){
+      return abecedario[letraAleatoria];
+    }
+
+      function contarPuntos(){
+        var pala = abecedario[letraAleatoria];
+        var palabras = new Array();
+        palabras = formulario.area.value.split(" ");
+        var bool = 0;
+
+        var ventana = window.open("","","width=500,height=300")
+        ventana.document.write('<meta charset="utf-8">');
+        ventana.document.write("<p>Puntos Palabras</p>");
+
+        for (var i = 0; i < palabras.length; i++) {
+        var palabra = palabras[i];
+          if (palabra.charAt(0) == pala) {
+            contador++;
+          }else{
+            ventana.document.write("<p>Error!! La palabra ( "+palabras[i]+" ) no es correcta. USTED HA PERDIDO</p>");
+            bool = 1;
+          }
+        }
+        if(bool == 0){
+        ventana.document.write("<p><b>PUNTUACIÓN: "+contador+"</b></p>");
+      }
+        }
+
+    </script>
+    <style media="screen">
+      textarea, input{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Manipular Arrays</h1>
+<form name="formulario">
+  <p>
+    Introcuce algunas palabras que empiecen por:   <script language="javascript">document.write(letra());</script>
+  </p>
+<textarea name="area" rows="3" cols="40"></textarea>
+<input type="button" name="button" value="Aceptar" onclick="contarPuntos()">
+</form>
+
+  </body>
+</html>
