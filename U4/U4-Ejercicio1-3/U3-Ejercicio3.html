@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+<body>
+<div id="contiene_ps">
+      <p>?</p>
+      <p>?</p>
+      <p>?</p>
+      <p>?</p>
+      <p>?</p>
+      <p>?</p>
+<div id="cambiame">
+<input type="color" id="txtColor" value="#FF0000">
+<button id="actualizar" onclick="recorreTag();">Modificar los párrafos!</button>
+</div>
+</div>
+  </body>
+  <script type="text/javascript">
+
+    function recorreTag(){
+      var ps = document.getElementsByTagName("p");
+      for (var i = 0; i < ps.length; i++) {
+          ps[i].innerText = "Esto es el numero: "+ i;
+          ps[i].style.color = txtColor.value;
+      }
+    }
+
+  </script>
+</html>
