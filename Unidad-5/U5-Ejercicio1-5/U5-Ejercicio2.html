@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Ejercicio 1w</title>
+
+<script>
+function func1() {
+        var texto = document.querySelector('p');
+        texto.innerText = "Esto es el texto una vez cambiado";
+}
+
+
+    onclick = function func3(e){
+      var texto = document.querySelector('h3');
+      texto.innerText = "Usted a hecho clik en: "+ e.target;
+    }
+
+    onmousedown = function func2(){
+         document.getElementsByTagName('h2')[0].innerText = "Esto es el texto una vez cambiado del h2";
+       }
+
+
+</script>
+
+</head>
+<body>
+
+<!-- <IMG SRC="una.jpg" onmouseover="func1();" onmouseout="func2();"> -->
+
+<p onclick="func1();">Este es el texto del P</p>
+<div>Este es el texto del Div</div>
+<h1 onmouseout="this.innerHTML='Esto es el texto una vez cambiado del h1'">Este es el texto del h1</h1>
+<h2>Este es el texto del h2</h2>
+<h3>Este es el texto del h3</h3>
+
+
+<script type="text/javascript">
+
+document.getElementsByTagName('div')[0].ondblclick= function() {
+  var div = document.querySelector('div');
+  div.innerText = "Esto es el texto una vez cambiado del DIV";
+}
+
+</script>
+</body>
+</html>

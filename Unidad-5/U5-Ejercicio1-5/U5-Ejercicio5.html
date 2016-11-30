@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Ejercicio 1w</title>
+
+<style media="screen">
+
+h1{
+  font-size: 24px;
+}
+img{
+  width: 200px;
+}
+</style>
+
+<script>
+
+  var tam = 24;
+  var ancho = 200;
+
+  function Move(event) {
+
+  if (event.shiftKey) {
+      tam = tam/2;
+  	  document.getElementById("titulo").style.fontSize = tam+"px";
+  }else{
+      tam = tam*2;
+      document.getElementById("titulo").style.fontSize = tam+"px";
+  }
+  }
+
+  function MoveImg(event) {
+
+  if (event.shiftKey) {
+      ancho = ancho/2;
+      document.getElementById("imagen").style.width = ancho+"px";
+  }else{
+      ancho = ancho*2;
+      document.getElementById("imagen").style.width = ancho+"px";
+  }
+  }
+
+</script>
+
+</head>
+<body>
+
+<h1 id="titulo" onmousewheel="Move(event)">Este es el titulo a 24px</h1>
+<IMG  id="imagen" SRC="una.jpg" onmousewheel="MoveImg(event)">
+
+</body>
+</html>

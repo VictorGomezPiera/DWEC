@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Ejercicio 2</title>
+
+<script>
+// funcion color random (Lo he copiado de internet)
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+
+     ondblclick = function func3(e){
+       var manejador = e.target;
+       manejador.style.color=getRandomColor();
+     }
+ </script>
+
+</head>
+<body>
+
+<!-- <IMG SRC="una.jpg" onmouseover="func1();" onmouseout="func2();"> -->
+
+<p>Este es el texto del P</p>
+<div>Este es el texto del Div</div>
+<h1>Este es el texto del h1</h1>
+<h2>Este es el texto del h2</h2>
+<h3>Este es el texto del h3</h3>
+
+
+</body>
+</html>
