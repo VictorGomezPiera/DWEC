@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Ejercicio 10</title>
+<style media="screen">
+  #imagen{
+    width: 150px;
+  }
+</style>
+
+<script type="application/javascript">
+var incremento=0;
+
+function manejaZoom (e) {
+         evento = e || window.event;
+         k=evento.keyCode; //número de código de la tecla.
+
+  if (k==109) {
+    incremento = incremento - 25;
+          document.getElementById("imagen").style.width = 150+incremento+"px";
+  }
+  if (k==107) {
+    if(incremento<1024){
+      incremento = incremento + 25;
+      document.getElementById("imagen").style.width = 150+incremento+"px";
+    }
+  }
+}
+
+window.onload = function() {
+document.onkeydown = manejaZoom;
+}
+
+</script>
+
+<body onkeypress="manejaZoom()">
+   <img src="1.jpg" id="imagen">
+</body>
+</html>

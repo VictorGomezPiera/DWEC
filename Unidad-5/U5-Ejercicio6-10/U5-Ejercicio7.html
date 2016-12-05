@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Ejercicio 7</title>
+<style media="screen">
+  img{
+    width: 200px;
+  }
+</style>
+
+<script type="text/javascript">
+
+function info (e) {
+         evento = e || window.event;
+         k=evento.keyCode; //número de código de la tecla.
+
+         var especial = e.altKey || e.ctrlKey || e.shiftKey || e.metaKey;
+          if (especial){
+        h2.innerHTML = "El caracter especial pulsado es :"+k;
+      }else{
+         h2.innerText ="El caracter pulsado es :"+ k;
+      }
+       }
+
+       window.onload = function() {
+       document.onkeydown = info;
+       }
+
+</script>
+
+</head>
+<body>
+
+<h1>Pulse una tecla:</h1>
+<h2 id="h2"></h2>
+
+</body>
+</html>

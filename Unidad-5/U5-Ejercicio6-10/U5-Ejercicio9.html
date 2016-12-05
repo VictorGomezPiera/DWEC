@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Ejercicio 9</title>
+<style media="screen">
+  #div{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    background-color: yellow;
+
+
+  }
+</style>
+
+<script type="text/javascript">
+
+var left=0;
+var toop=0;
+
+
+function info (e) {
+         evento = e || window.event;
+         k=evento.keyCode; //número de código de la tecla.
+
+         if (k==37) {
+           left = left - 20;
+           div.style.marginLeft=left+"px";
+         }
+         if (k==39) {
+           left = left + 20;
+           div.style.marginLeft=left+"px";
+         }
+         if (k==38) {
+           toop = toop - 20;
+           div.style.marginTop=toop+"px";
+         }
+         if (k==40) {
+           toop = toop + 20;
+           div.style.marginTop=toop+"px";
+         }
+      }
+
+
+window.onload = function() {
+document.onkeydown = info;
+}
+
+</script>
+
+</head>
+<body>
+
+<h1>Pulsa una flecha</h1>
+<div id="div">
+
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Ejercicio 1w</title>
+<style media="screen">
+  img{
+    width: 200px;
+  }
+</style>
+
+<script type="text/javascript">
+
+function info (elEvento) {
+         evento = elEvento || window.event;
+         k=evento.keyCode; //número de código de la tecla.
+         h2.innerText = k;
+         }
+         window.onload = function() {
+         document.onkeydown = info;
+
+         }
+
+</script>
+
+</head>
+<body>
+
+<h1>Pulse una tecla:</h1>
+<h2 id="h2"></h2>
+
+</body>
+</html>
