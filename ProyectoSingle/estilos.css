@@ -1,0 +1,223 @@
+/*CSS de singlePage cabecera*/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+#logo{
+  margin-top: 2%;
+	width: 35%;
+	margin-left: 5%;
+}
+
+#buscador{
+  margin-top: -10%;
+  width: 25%;
+  margin-left: 57%;
+}
+
+#micuenta{
+  margin-left: 1%;
+  width: 110px;
+  height: 25px;
+  min-width: 80px;
+}
+
+#carrito{
+  width: 80px;
+  height: 80px;
+  margin-top: -55px;
+}
+.navbar{
+  margin-top: 1%;
+}
+
+#navbar-1{
+  background-color: #A4A4A4;
+}
+
+.ulAncho{
+	width: 101%;
+}
+
+.item img{
+	width: 100%;
+}
+
+.listaMenu{
+	text-align: center;
+	width: 33%;
+  font-weight: bold;
+}
+.listaMenu a{
+	color: black;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color:#424242;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+	color:#fff;
+	background:#0B1E4D;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color:#424242;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+	color:#fff;
+	background:#0B1E4D;
+}
+/*CSS Fin de singlePage cabecera*/
+
+/*CSS de Contenido singlePage*/
+
+.singlePage{
+	width: 91%;
+	margin-left: 5%;
+}
+
+#desta{
+  margin-top: 2%;
+}
+h3{
+  text-decoration: underline;
+}
+
+.destacadoProducto{
+  display:inline;
+  background-color: #E6E6E6;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.destacadoProducto img{
+  text-align: center;
+}
+
+.destacadoProducto:hover img{
+  opacity: 0.7;
+}
+
+.destacadoProducto:hover{
+  background-color: #FFFFFF;
+}
+
+h4{
+  text-align: left;
+}
+
+
+.imgProducHome{
+  width: 100%;
+  max-width: 500px;
+  padding-top: 3%;
+  text-align: center;
+}
+
+#destacadoUno{
+	background-image: url("img/des1.png");
+	background-repeat: no-repeat;
+}
+
+#destacadoDos{
+	background-image: url("img/des1.png");
+	background-repeat: no-repeat;
+}
+
+#destacadoTres{
+	background-image: url("img/des1.png");
+	background-repeat: no-repeat;
+}
+
+#video{
+  margin-top: 3%;
+}
+
+/*CSS de Contacta singlePage*/
+form {
+  margin: 10px;
+}
+fieldset{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.formu {
+  margin: .4em 0 .8em 0;
+}
+.formu label {
+  width: 20%;
+  float: left;
+}
+
+#resultado {
+  display:inline;
+}
+
+
+.formu:focus {
+  outline: none;
+  border: 1px solid violet;
+  background-color: silver;
+}
+.formu[type="text"]{
+  padding: 0.4em;
+}
+.formu, select{
+  border-radius: 5px;
+}
+.formu[type="submit"]{
+  display: block;
+  margin: .4em 0 .8em 0;
+}
+/*CSS Fin Contacta singlePage*/
+/*CSS Fin de Contenido singlePage*/
+
+/*CSS de Footer singlePage*/
+footer{
+  background:#A4A4A4;
+  text-align: center;
+  width: 100%;
+  margin-top: 3%;
+}
+
+.redes img{
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 12%;
+  min-width: 20px;
+}
+.redes a:hover{
+  opacity: 0.5;
+}
+.accesibilidad{
+color: white;
+margin-bottom: 3%;
+}
+
+.accesibilidad a{
+font-size: 1.3em;
+color: white;
+margin-right: 5%;
+}
+
+.accesibilidad img{
+  padding-top: 2%;
+  width: 25%;
+  min-width: 20px;
+}
+
+.pago img{
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 12%;
+  min-width: 20px;
+}
+.pago a:hover{
+  opacity: 0.5;
+}
