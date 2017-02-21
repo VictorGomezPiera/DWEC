@@ -39,6 +39,9 @@ nav a{
 #navbar-1{
   background-color: #A4A4A4;
 }
+h1{
+  margin-left: 5%;
+}
 
 .ulAncho{
 	width: 101%;
