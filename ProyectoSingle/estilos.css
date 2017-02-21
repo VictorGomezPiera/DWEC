@@ -183,14 +183,13 @@ fieldset{
 
 /*CSS de Footer singlePage*/
 footer{
-  background:#A4A4A4;
+  background-color: #A4A4A4;
   text-align: center;
   width: 100%;
   margin-top: 3%;
 }
-footer a{
+.accesibilidad label{
   color: black;
-  background-color: #A4A4A4;
 }
 
 .redes img{
@@ -209,7 +208,7 @@ margin-bottom: 3%;
 
 .accesibilidad a{
 font-size: 1.3em;
-color: white;
+color: black;
 margin-right: 5%;
 }
 
