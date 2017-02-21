@@ -4,6 +4,9 @@
   margin: 0px;
   padding: 0px;
 }
+a{
+  background-color: #dadada;
+}
 
 #logo{
   margin-top: 2%;
